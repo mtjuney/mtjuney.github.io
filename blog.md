@@ -8,7 +8,7 @@ permalink: /blog/
 <div class="home">
 
 
-  {% for post in site.posts%}
+  <!-- {% for post in site.posts%}
   <div class="post postContent">
     <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
     </div>
@@ -22,11 +22,11 @@ permalink: /blog/
     <div class="postExt">
    {{ post.content | strip_html | truncatewords:20}}
     </div>
-  </div>
+  </div> -->
 
 
   {% endfor %}
-  <!--<ul class="post-list">
+  <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -36,7 +36,7 @@ permalink: /blog/
         </h2>
       </li>
     {% endfor %}
-  </ul>-->
+  </ul>
 
 
 
