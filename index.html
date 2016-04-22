@@ -14,7 +14,6 @@ layout: default
 	</li>
 	{% endif %}
 	{% endfor %}
-
 </ul>
 
   <!-- {% for post in site.posts%}
@@ -35,19 +34,18 @@ layout: default
 
 <h1>Blog Contents</h1>
 
+{% endfor %}
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
   {% endfor %}
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+</ul>
 
 
 </div>
