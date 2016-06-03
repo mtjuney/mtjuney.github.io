@@ -7,7 +7,6 @@ permalink: /blog/
 
 <div class="home">
 
-  {% endfor %}
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
