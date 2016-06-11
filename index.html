@@ -3,6 +3,7 @@ layout: default
 ---
 <div id="home" class="page-content wc-container">
 
+	<h1>Contents</h1>
 	<ul>
 	{% for sitePage in site.pages %}
 	{% if sitePage.title %}
@@ -12,6 +13,8 @@ layout: default
 	{% endif %}
 	{% endfor %}
   </ul>
+
+	<h1>Blog Contents</h1>
 
 	<div class="posts">
   		{% for post in site.posts limit:10 %}
