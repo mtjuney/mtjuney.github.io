@@ -46,7 +46,7 @@ markdown:    kramdown
 highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: /:year/:month/:title
 
 exclude:
   - CNAME
