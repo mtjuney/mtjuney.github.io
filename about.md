@@ -23,6 +23,6 @@ permalink: /about/
 * just say `Hello` at [mtjuney@gmail.com](mtjuney@gmail.com).
 
 
-[github]: https://github.com/mtjune
+[github]: https://github.com/mtjuney
 [google]: https://plus.google.com/117794095131148016423
 [twitter]: https://twitter.com/MtJuney
