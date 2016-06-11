@@ -1,43 +1,17 @@
 ---
-layout: page
-title: Blog
-permalink: /blog/
+layout: default
+title: Blog archive
 ---
-
-
-<div class="home">
-
-
-  <!-- {% for post in site.posts%}
-  <div class="post postContent">
-    <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-    </div>
-    <div class="postDay">
-      {{post.tag}}
-    </div>
-    <br>
-    <div class="postTitle">
-    <a class='postLink' href="{{post.url}}">{{post.title}}</a>
-    </div>
-    <div class="postExt">
-   {{ post.content | strip_html | truncatewords:20}}
-    </div>
-  </div> -->
-
-
-  {% endfor %}
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-
+<div class="page-content wc-container">
+  <h1>Blog Archive</h1>  
+  {% for post in site.posts %}
+  	{% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+  	{% if currentyear != year %}
+    	{% unless forloop.first %}</ul>{% endunless %}
+    		<h5>{{ currentyear }}</h5>
+    		<ul class="posts">
+    		{% capture year %}{{currentyear}}{% endcapture %} 
+  		{% endif %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
 </div>

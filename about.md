@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-山田純也
+**山田純也**
 
 
 筑波大学大学院
@@ -13,6 +13,7 @@ permalink: /about/
 図書館情報メディア専攻 M1
 
 手塚研究室
+
 
 ### Contact me
 
