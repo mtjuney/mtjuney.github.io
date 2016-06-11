@@ -1,4 +1,4 @@
-<ul>
+<!-- <ul>
 	<li>
 		<a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a><span>/</span>
 	</li>
@@ -8,4 +8,14 @@
 	<li>
 		<a href="{{ '/boardgame' | prepend: site.baseurl | prepend: site.url }}">BoardGame</a><span>/</span>
 	</li>
+</ul> -->
+
+<ul>
+{% for sitePage in site.pages %}
+{% if sitePage.title %}
+<li>
+	<a href="{{ '/' + sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+</li>
+{% endif %}
+{% endfor %}
 </ul>
