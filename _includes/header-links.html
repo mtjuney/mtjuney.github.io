@@ -14,7 +14,7 @@
 {% for sitePage in site.pages %}
 {% if sitePage.title %}
 <li>
-	<a href="{{ '/' + sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+	<a href="{{ sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a><span>/</span>
 </li>
 {% endif %}
 {% endfor %}
