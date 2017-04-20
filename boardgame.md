@@ -6,5 +6,7 @@ permalink: /boardgame/
 
 ## 所持ボードゲーム
 
+
 以下を参照
-[ボドゲーマ](https://bodoge.hoobby.net/friends/1198/boardgames/have)
+
+[所持ボードゲーム一覧](https://bodoge.hoobby.net/friends/1198/boardgames/have)
